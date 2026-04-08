@@ -1,8 +1,3 @@
-echo "# Visual Studio временные файлы" > .gitignore
-echo "Debug/" > .gitignore
-echo "Release" > .gitignore
-echo ".vs/" > .gitignore
-echo "*.user" > .gitignore
-echo "*.suo" > .gitignore
-echo "*.sdf" > .gitignore
-echo "ipch/" > .gitignore
+.vs/
+*.vsidx
+*.db
