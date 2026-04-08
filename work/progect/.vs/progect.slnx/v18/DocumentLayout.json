@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\sharaga\\project\\work\\progect\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EC0CB514-8F91-42FA-9821-2DF132600434}|progect\\progect.vcxproj|C:\\sharaga\\project\\work\\progect\\progect\\progect.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EC0CB514-8F91-42FA-9821-2DF132600434}|progect\\progect.vcxproj|solutionrelative:progect\\progect.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "progect.cpp",
+              "DocumentMoniker": "C:\\sharaga\\project\\work\\progect\\progect\\progect.cpp",
+              "RelativeDocumentMoniker": "progect\\progect.cpp",
+              "ToolTip": "C:\\sharaga\\project\\work\\progect\\progect\\progect.cpp",
+              "RelativeToolTip": "progect\\progect.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-08T13:49:24.89Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
