@@ -1,10 +1,12 @@
 .vs/
-*.vsidx
+.vsidx
 *.db
 *.db-shm
 *.db-wal
 Debug/
 Release/
 ipch/
-*.suo/
-*.user/
+*.suo
+*.user
+.suo
+*.db
