@@ -9,7 +9,7 @@ bool alarmEnabled = false;
 
 void setAlarm()
 {
-	cout << "vvedite chas budilnica: ";
+	cout << "\nvvedite chas budilnica: ";
 	cin >> alarmhour;
 	cout << "vvedite minutes budilnica: ";
 	cin >> alarmminute;
@@ -18,24 +18,25 @@ void setAlarm()
 
 
 	alarmEnabled = true;
-	cout << "budilnik ustanovlen na ";
+	cout << "\nbudilnik ustanovlen na ";
 	cout << alarmhour << ":" << alarmminute << ":" << alarmsecond << endl;
 }
 
 void ringAlarm()
 {
-	cout << "Budilnik Ring!!!!!!!!!!!" << endl;
+	cout << "\nBudilnik Ring!!!!!!!!!!!" << endl;
 		
 	while (true)
 	{
-		cout << "ALAAAARM!!!!" << endl;
-		Beep(1000, 1000);
+		cout << "\nALAAAARM!!!!" << endl;
 		cout << "Najmite probel dla otkluchenia" << endl;
+		Beep(1000, 1000);
 
-		if (GetAsyncKeyState(VK_SPACE) & 0x8000)
+
+		if (GetAsyncKeyState(VK_SPACE))
 		{
 			alarmEnabled = false;
-			cout << "budilnik vicluchen";
+			cout << "\nbudilnik vicluchen";
 			break;
 		}
 
@@ -57,7 +58,6 @@ void CheckAlarm()
 		cminute == alarmminute &&
 		csecond == alarmsecond)
 	{
-		cout << "\nproverca" << endl;
 		ringAlarm();
 	}
 }
