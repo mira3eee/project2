@@ -1,5 +1,6 @@
 ﻿#include <iostream>
-#include <windows.h> // Sleep, Beep, GetlLcalTime
+#include <windows.h> // Sleep, Beep, GetloLcalTime
+#include <locale>
 using namespace std;
 
 int alarmhour;
@@ -9,34 +10,36 @@ bool alarmEnabled = false;
 
 void setAlarm()
 {
-	cout << "\nvvedite chas budilnica: ";
+	setlocale(LC_ALL, "RU");
+	cout << "\nвведите час: ";
 	cin >> alarmhour;
-	cout << "vvedite minutes budilnica: ";
+	cout << "введите минуты: ";
 	cin >> alarmminute;
-	cout << "vvedite seconds budilnica: ";
+	cout << "введите секунды: ";
 	cin >> alarmsecond;
 
 
 	alarmEnabled = true;
-	cout << "\nbudilnik ustanovlen na ";
+	cout << "\nбудильник установлен на ";
 	cout << alarmhour << ":" << alarmminute << ":" << alarmsecond << endl;
 }
 
 void ringAlarm()
 {
-	cout << "\nBudilnik Ring!!!!!!!!!!!" << endl;
-		
+	setlocale(LC_ALL, "RU");
+	cout << "\nБудильник звонит!!!!!!!!!!!" << endl;
+
 	while (true)
 	{
-		cout << "\nALAAAARM!!!!" << endl;
-		cout << "Najmite probel dla otkluchenia" << endl;
+		cout << "\nААААЛААААААРМ!!!!" << endl;
+		cout << "НАЖМИТЕ НА ПРОБЕЛ ДЛЯ ОТКЛЮЧЕНИЯ" << endl;
 		Beep(1000, 1000);
 
 
 		if (GetAsyncKeyState(VK_SPACE))
 		{
 			alarmEnabled = false;
-			cout << "\nbudilnik vicluchen";
+			cout << "\nбудильник выключен";
 			break;
 		}
 
@@ -64,7 +67,8 @@ void CheckAlarm()
 
 int main()
 {
-	cout << "programma zapuzhena" << endl;
+	setlocale(LC_ALL, "RU");
+	cout << "программа запущена" << endl;
 
 	setAlarm();
 
