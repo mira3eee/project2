@@ -1,5 +1,5 @@
 ﻿#include <iostream>
-#include <windows.h> // Sleep, Beep, GetloLcalTime
+#include <windows.h> // Sleep, Beep, GetloLocalTime
 #include <locale>
 using namespace std;
 
@@ -35,7 +35,7 @@ void ringAlarm()
 		cout << "НАЖМИТЕ НА ПРОБЕЛ ДЛЯ ОТКЛЮЧЕНИЯ" << endl;
 		Beep(1000, 1000);
 
-
+	
 		if (GetAsyncKeyState(VK_SPACE))
 		{
 			alarmEnabled = false;
