@@ -108,7 +108,11 @@ void addToHistory(const string& alarmName)
 
 void showHistory()
 {
-    if (historyCount == 0) { cout << "\nИстория пуста." << endl; return; }
+    if (historyCount == 0) 
+    { 
+        cout << "\nИстория пуста." << endl; 
+        return; 
+    }
     cout << "\n===== ИСТОРИЯ =====" << endl;
     for (int i = 0; i < historyCount; i++)
         cout << i + 1 << ". " << ringHistory[i] << endl;
@@ -118,7 +122,11 @@ vector<Alarm*> alarms;
 
 void showAlarms()
 {
-    if (alarms.empty()) { cout << "\nБудильников нет." << endl; return; }
+    if (alarms.empty()) 
+    { 
+        cout << "\nБудильников нет." << endl; 
+        return; 
+    }
     cout << "\n===== БУДИЛЬНИКИ =====" << endl;
     for (int i = 0; i < alarms.size(); i++)
         alarms[i]->print(i + 1);
@@ -189,7 +197,11 @@ void deleteAlarm()
 
 void sortAlarms()
 {
-    if (alarms.size() < 2) { cout << "Недостаточно будильников." << endl; return; }
+    if (alarms.size() < 2) 
+    { 
+        cout << "Недостаточно будильников." << endl; 
+        return; 
+    }
     sort(alarms.begin(), alarms.end(), [](Alarm* a, Alarm* b)
         {
             int sA = a->getHour() * 3600 + a->getMinute() * 60 + a->getSecond();
